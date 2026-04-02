@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Siswa</title>
+    <title>Tambah-Siswa</title>
+    <link rel="stylesheet" href="/css/output.css">
 </head>
-<body>
-    <h1>Tambah Siswa</h1>
-    <p>Menampilkan form tambah siswa</p>
+<body class="min-h-screen flex flex-col bg-gray-100">
+    <!-- Header start -->
+    <header class="bg-pink-500 text-white">
+        <div class="flex items-center justify-between container mx-auto p-4">
+            <a href="/students"class="font-bold">Sistem Sekolah</a>
+            <a href="/students/create"class="bg-white text-blue-500 px-4 py-2 rounded-lg">+ Tambah Siswa</a>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+        <main class="container mx-auto flex-grow">
+            <div class="mt-8 space-y-2">
+                <!-- Card header start -->
+                 <div class="p-4 shadow rounded-lg bg-white">
+                    <h1 class="text-2xl font-bold">Tambah Siswa</h1>
+                    <p>Menambahkan siswa ke dalam sistem</p>
+                 </div>
+                <!-- Card header end -->
+
+        <!-- Card body start -->
+         <div class="bg-white shadow rounded-lg p-4">
+            <form action="" class="grid grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <label class="block font-bold" for="name">Nama</label>
+                    <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Name" placeholder="Masukkan nama" name="name">
+                </div>
+                <div class="space-y-2">
+                    <label class="block font-bold" for="name">NIS</label>
+                    <input class="w-full px-4 py-2 border rounded-lg" type="text" id="NIS" placeholder="Masukkan NIS" name="NIS">
+                </div>
+                <div class="space-y-2">
+                    <label class="block font-bold" for="name">Class</label>
+                    <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Class" placeholder="Masukkan kelas" name="class">
+                </div>
+                <div class="space-y-2">
+                    <label class="block font-bold" for="name">Phone number</label>
+                    <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Phone_number" placeholder="Masukkan no telepon" name="phone_number">
+                </div>
+            </form>
+         </div>
+         <!-- Card body end -->
+        </div>
+    </main>   
+    <!-- Main end -->
+
+
+    <!-- Footer start -->
+     <footer class="bg-blue-500 text-white">
+        <div class="text-center p-4">
+            &copy <!?= date ('Y')?> Sistem Sekolah - SMK Kristen Immanuel
+        </div>
+    </footer>
+    <!-- Footer end -->
 </body>
 </html>
