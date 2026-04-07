@@ -4,14 +4,18 @@
     class StudentController
     {
 
-         Public function index()
+         public function index()
          {
-           require_once '../app/views/students/index.php';
+            require_once '../app/views/students/index.php';
          }
          
-         Public function create()
+         public function create()
          {
             require_once '../app/views/students/create.php';
+         }
+         public function show (string $id)
+         {
+            require_once '../app/views/students/show.php';
          }
 
     }
