@@ -45,6 +45,10 @@
                     <label class="block font-bold" for="name">Phone number</label>
                     <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Phone_number" placeholder="Masukkan no telepon" name="phone_number">
                 </div>
+                <div class="flex justify-end col-span-2">
+                    <a href="/students" class="py-2 px-4 bg-gray-100 rounded-lg">Kembali</a>
+                    <button type="submit" class="py-2 px-4 bg-pink-500 rounded-lg text-white">Simpan</button>
+                </div>
             </form>
          </div>
          <!-- Card body end -->
