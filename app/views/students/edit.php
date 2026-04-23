@@ -8,25 +8,26 @@
 
     <!-- Card body start -->
     <div class="bg-white shadow rounded-lg p-4">
-        <form action="" class="grid grid-cols-2 gap-4">
-            <div class="space-y-2">
+        <form action="/students/<?= $student['id']?>" method="POST" class="grid grid-cols-2 gap-4">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="space-y-2">
                 <label class="block font-bold" for="name">Name</label>
-                <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Name" placeholder="Masukkan nama"
+                <input value="<?= $student['name']?>" class="w-full px-4 py-2 border rounded-lg" type="text" id="Name" placeholder="Masukkan nama"
                     name="name">
             </div>
             <div class="space-y-2">
                 <label class="block font-bold" for="name">NIS</label>
-                <input class="w-full px-4 py-2 border rounded-lg" type="text" id="NIS" placeholder="Masukkan NIS"
-                    name="NIS">
+                <input value="<?= $student['nis']?>" class="w-full px-4 py-2 border rounded-lg" type="text" id="NIS" placeholder="Masukkan NIS"
+                    name="nis">
             </div>
             <div class="space-y-2">
                 <label class="block font-bold" for="name">Class</label>
-                <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Class" placeholder="Masukkan kelas"
+                <input value="<?= $student['class']?>" class="w-full px-4 py-2 border rounded-lg" type="text" id="Class" placeholder="Masukkan kelas"
                     name="class">
             </div>
             <div class="space-y-2">
                 <label class="block font-bold" for="name">Phone number</label>
-                <input class="w-full px-4 py-2 border rounded-lg" type="text" id="Phone_number"
+                <input value="<?= $student['phone_number']?>" class="w-full px-4 py-2 border rounded-lg" type="text" id="Phone_number"
                     placeholder="Masukkan no telepon" name="phone_number">
             </div>
             <div class="flex justify-end col-span-2">
